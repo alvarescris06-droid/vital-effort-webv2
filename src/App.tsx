@@ -617,37 +617,31 @@ const App: React.FC = () => {
           <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
             <strong className="text-white block mb-1">👨🏻‍💻 Evaluación Bio-Individual:</strong> 
             ✔️ Análisis de Composición Corporal<br/>
-            ✔️ Gasto Energético<br/>
-            ✔️ Historial y Objetivos
+            ✔️ Gasto Energético | Historial y Objetivos
           </li>
           <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-            <strong className="text-white block mb-1">📊 Estrategia de Macronutrientes y Micronutrientes:</strong> 
-            ✔️ Distribución de Macros<br/>
-            ✔️ Densidad de Micronutrientes<br/>
+            <strong className="text-white block mb-1">📊 Estrategia de Nutrientes:</strong> 
+            ✔️ Distribución de Macros | Densidad de Micros<br/>
             ✔️ Fibra y Salud Intestinal
           </li>
           <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
             <strong className="text-white block mb-1">🍲 Planificación de Comidas:</strong> 
-            ✔️ Ejemplos de Menús Diarios<br/>
-            ✔️ Sistema de Equivalentes<br/>
+            ✔️ Menús Diarios | Sistema de Equivalentes<br/>
             ✔️ Timing Nutricional
           </li>
           <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
             <strong className="text-white block mb-1">⚠️ Protocolo de Hidratación:</strong> 
-            ✔️ Cálculo de ingesta de agua diaria basado en peso y nivel de sudoración.<br/>
-            ✔️ Uso de electrolitos si el "esfuerzo" es de alta intensidad o larga duración.
+            ✔️ Cálculo basado en peso y sudoración<br/>
+            ✔️ Uso estratégico de electrolitos
           </li>
           <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
             <strong className="text-white block mb-1">🧬 Guía de Suplementación:</strong> 
-            ✔️ Vitaminas<br/>
-            ✔️ Ayudas ergogénicas<br/>
-            ✔️ Dosis y momentos ideales de consumó.
+            ✔️ Vitaminas | Ayudas ergogénicas<br/>
+            ✔️ Dosis y momentos ideales
           </li>
           <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-            <strong className="text-white block mb-1">🧱 Educación y Herramientas de Estilo de Vida:</strong> 
-            ✔️ Lista de Compras<br/>
-            ✔️ Guía de "Comer Fuera"<br/>
-            ✔️ Técnicas de preparación<br/>
+            <strong className="text-white block mb-1">🧱 Herramientas de Vida:</strong> 
+            ✔️ Lista de Compras | Guía "Comer Fuera"<br/>
             ✔️ Gestión de Ansiedad y Sueño
           </li>
           <li className="text-amber-500 text-[10px] font-black italic mt-4 uppercase">
@@ -676,30 +670,34 @@ const App: React.FC = () => {
         
         <ul className="space-y-4 mb-12 flex-grow">
           <li className="text-[11px] text-gray-300 leading-relaxed uppercase font-medium">
-            <strong className="text-white block mb-1">📏 Protocolo de Valoración Antropométrica:</strong> 
-            ✔️ Perfil de Pliegues Cutáneos<br/>
-            ✔️ Perímetros Corporales<br/>
-            ✔️ Diámetros Óseos
+            <strong className="text-white block mb-1">📏 Protocolo ISAK:</strong> 
+            ✔️ Perfil de 8 Pliegues Cutáneos<br/>
+            ✔️ 6 Perímetros | 2 Diámetros Óseos
           </li>
           <li className="text-[11px] text-gray-300 leading-relaxed uppercase font-medium">
-            <strong className="text-white block mb-1">👨🏻‍💻 Análisis de Composición Pentacompartimental:</strong> 
-            ✔️ Masa Muscular Esquelética<br/>
-            ✔️ Masa Adiposa<br/>
-            ✔️ Masa Residual<br/>
-            ✔️ Masa ósea<br/>
-            ✔️ Masa piel
+            <strong className="text-white block mb-1">👨🏻‍💻 Análisis Pentacompartimental:</strong> 
+            ✔️ Masa Muscular, Adiposa y Residual<br/>
+            ✔️ Masa Ósea y Masa Piel
           </li>
           <li className="text-[11px] text-gray-300 leading-relaxed uppercase font-medium">
             <strong className="text-white block mb-1">⚕️ Índices de Salud y Riesgo:</strong> 
-            ✔️ Índice Cintura-Cadera<br/>
-            ✔️ Índice de Masa Muscular vs. Grasa<br/>
-            ✔️ Somatotipo
+            ✔️ Índice Cintura-Cadera | Somatotipo<br/>
+            ✔️ Relación Músculo/Grasa (M-G)
+          </li>
+          <li className="text-[11px] text-gray-300 leading-relaxed uppercase font-medium">
+            <strong className="text-white block mb-1">📈 Seguimiento y Cinética:</strong> 
+            ✔️ Comparativa de pliegues absoluta<br/>
+            ✔️ Predicción de peso ideal deportivo
           </li>
           <li className="text-[11px] text-gray-300 leading-relaxed uppercase font-medium">
             <strong className="text-white block mb-1">📤 Entrega de Resultados:</strong> 
-            ✔️ Gráficas de Evolución<br/>
-            ✔️ Mapas de Calor Corporal<br/>
-            ✔️ Metas Realistas
+            ✔️ Gráficas de Evolución Temporales<br/>
+            ✔️ Mapas de Calor Corporal y Metas
+          </li>
+          <li className="text-[11px] text-gray-300 leading-relaxed uppercase font-medium">
+            <strong className="text-white block mb-1">🎯 Aplicación Práctica:</strong> 
+            ✔️ Ajuste de objetivos de entrenamiento<br/>
+            ✔️ Validación de estrategia nutricional
           </li>
           <li className="text-amber-500 text-[10px] font-black italic mt-4 uppercase">
             🧬 "No adivinamos, medimos. Tu esfuerzo merece precisión."
@@ -724,19 +722,34 @@ const App: React.FC = () => {
         
         <ul className="space-y-4 mb-12 flex-grow">
           <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-            ✔️ Periodización y Macro-Estructura
+            <strong className="text-white block mb-1">📉 Periodización Deportiva:</strong> 
+            ✔️ Macro-Estructura personalizada<br/>
+            ✔️ Mesociclos de fuerza y potencia
           </li>
           <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-            ✔️ Entrenamiento de Capacidades Físicas
+            <strong className="text-white block mb-1">⚙️ Capacidades Físicas:</strong> 
+            ✔️ Entrenamiento basado en RPE/RIR<br/>
+            ✔️ Especificidad técnica deportiva
           </li>
           <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-            ✔️ Especificidad Deportiva
+            <strong className="text-white block mb-1">🔥 Gestión de la Fatiga:</strong> 
+            ✔️ Control de carga externa e interna<br/>
+            ✔️ Protocolos de recuperación activa
           </li>
           <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-            ✔️ Gestión de la Fatiga y Recuperación
+            <strong className="text-white block mb-1">🔬 Evidencia Científica:</strong> 
+            ✔️ Selección de ejercicios eficiente<br/>
+            ✔️ Optimización de rango de movimiento
           </li>
           <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-            ✔️ Basado en evidencia cientifica
+            <strong className="text-white block mb-1">📱 Seguimiento Digital:</strong> 
+            ✔️ Registro de progresiones de carga<br/>
+            ✔️ Feedback constante de ejecución
+          </li>
+          <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
+            <strong className="text-white block mb-1">🔝 Peak Performance:</strong> 
+            ✔️ Preparación para eventos o metas<br/>
+            ✔️ Ajuste de volumen e intensidad
           </li>
           <li className="text-amber-500 text-[10px] font-black italic mt-4 uppercase">
             📊 "En Vital Effort, no entrenamos para cansarnos, entrenamos para ganar."
@@ -770,7 +783,7 @@ const App: React.FC = () => {
     </div>
   </div>
 </section>
-              
+
               {/* FAQ */}
               <section className="py-32 px-6 bg-[#0a0a0a] border-t border-white/5">
                 <div className="max-w-4xl mx-auto">
