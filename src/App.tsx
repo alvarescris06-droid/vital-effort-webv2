@@ -625,6 +625,8 @@ const App: React.FC = () => {
                         </li>
                         <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
                           <strong className="text-white block mb-1">🧬 Guía Suplementación:</strong> Vitaminas, ayudas ergogénicas y dosis.
+                          <li className="text-amber-500 text-[10px] font-black italic mt-4 uppercase">
+                          "Tu nutricion es el combustible de tu vida."
                         </li>
                       </ul>
 
@@ -648,9 +650,6 @@ const App: React.FC = () => {
                       <p className="text-amber-500 font-black mb-6 italic tracking-widest uppercase text-xs">Precisión Antropométrica</p>
                       
                       <ul className="space-y-4 mb-12 flex-grow">
-                        <li className="text-[11px] text-gray-300 leading-relaxed uppercase font-medium italic mb-4">
-                          "Tu esfuerzo merece precisión." 🤌🏻
-                        </li>
                         <li className="text-[11px] text-gray-300 leading-relaxed uppercase font-medium">
                           <strong className="text-white block mb-1">📏 Protocolo:</strong> Perfil de pliegues, perímetros y diámetros óseos.
                         </li>
@@ -659,6 +658,11 @@ const App: React.FC = () => {
                         </li>
                         <li className="text-[11px] text-gray-300 leading-relaxed uppercase font-medium">
                           <strong className="text-white block mb-1">⚕️ Índices:</strong> Cintura-cadera, somatotipo y riesgos de salud.
+                          <li className="text-[11px] text-gray-300 leading-relaxed uppercase font-medium">
+                          <strong className="text-white block mb-1">👨🏻‍💻 Entrega:</strong> Graficas de evolucion, Mapas de calor corporal, metas realizadas.
+                        </li>
+                          <li className="text-amber-500 text-[10px] font-black italic mt-4 uppercase">
+                          "No adivinamos, medimos. Tu esfuerzo merece precision."
                         </li>
                       </ul>
 
