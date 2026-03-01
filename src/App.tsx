@@ -605,41 +605,65 @@ const App: React.FC = () => {
     </div>
 
     <div className="grid lg:grid-cols-3 gap-8">
-      {/* 1. Effort Nutrition */}
+      {/* 1. VITAL NUTRITION */}
       <div className="bg-[#111] p-10 rounded-[3.5rem] border border-white/5 flex flex-col hover:border-amber-500/30 transition-all group shadow-2xl">
         <div className="bg-white/5 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-500 group-hover:text-black transition-colors">
           <Activity size={32} />
         </div>
-        <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">Effort Nutrition</h4>
+        <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">VITAL NUTRITION</h4>
         <p className="text-amber-500 font-black mb-6 italic tracking-widest uppercase text-xs">Evaluación Bio-Individual</p>
         
         <ul className="space-y-4 mb-12 flex-grow">
           <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-            <strong className="text-white block mb-1">📊 Estrategia de Nutrientes:</strong> Distribución de macros, densidad y salud intestinal.
+            <strong className="text-white block mb-1">👨🏻‍💻 Evaluación Bio-Individual:</strong> 
+            ✔️ Análisis de Composición Corporal<br/>
+            ✔️ Gasto Energético<br/>
+            ✔️ Historial y Objetivos
           </li>
           <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-            <strong className="text-white block mb-1">🍲 Planificación:</strong> Menús diarios, equivalentes y timing nutricional.
+            <strong className="text-white block mb-1">📊 Estrategia de Macronutrientes y Micronutrientes:</strong> 
+            ✔️ Distribución de Macros<br/>
+            ✔️ Densidad de Micronutrientes<br/>
+            ✔️ Fibra y Salud Intestinal
           </li>
           <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-            <strong className="text-white block mb-1">⚠️ Protocolo Hidratación:</strong> Cálculo por sudoración y uso de electrolitos.
+            <strong className="text-white block mb-1">🍲 Planificación de Comidas:</strong> 
+            ✔️ Ejemplos de Menús Diarios<br/>
+            ✔️ Sistema de Equivalentes<br/>
+            ✔️ Timing Nutricional
           </li>
           <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-            <strong className="text-white block mb-1">🧬 Guía Suplementación:</strong> Vitaminas, ayudas ergogénicas y dosis.
+            <strong className="text-white block mb-1">⚠️ Protocolo de Hidratación:</strong> 
+            ✔️ Cálculo de ingesta de agua diaria basado en peso y nivel de sudoración.<br/>
+            ✔️ Uso de electrolitos si el "esfuerzo" es de alta intensidad o larga duración.
+          </li>
+          <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
+            <strong className="text-white block mb-1">🧬 Guía de Suplementación:</strong> 
+            ✔️ Vitaminas<br/>
+            ✔️ Ayudas ergogénicas<br/>
+            ✔️ Dosis y momentos ideales de consumó.
+          </li>
+          <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
+            <strong className="text-white block mb-1">🧱 Educación y Herramientas de Estilo de Vida:</strong> 
+            ✔️ Lista de Compras<br/>
+            ✔️ Guía de "Comer Fuera"<br/>
+            ✔️ Técnicas de preparación<br/>
+            ✔️ Gestión de Ansiedad y Sueño
           </li>
           <li className="text-amber-500 text-[10px] font-black italic mt-4 uppercase">
-            "Tu nutrición es el combustible de tu vida"
+            ⚡ "Tu nutrición es el combustible de tu victoria."
           </li>
         </ul>
 
         <button 
-          onClick={() => handlePlanSelection("Effort Nutrition", 170000)}
+          onClick={() => handlePlanSelection("Vital Nutrition", 170000)}
           className="w-full py-5 bg-white/5 text-white font-[1000] rounded-2xl uppercase tracking-widest hover:bg-amber-500 hover:text-black transition-all border border-white/10 text-xs"
         >
           Solicitar Nutrición
         </button>
       </div>
 
-      {/* 2. EFFORT BIOMEASURE */}
+      {/* 2. VITAL BIOMEASURE */}
       <div className="bg-[#151515] p-10 rounded-[3.5rem] border-2 border-amber-500 flex flex-col relative transform lg:scale-105 shadow-[0_0_60px_rgba(245,158,11,0.15)] group">
         <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-amber-500 text-black px-8 py-2 rounded-full text-[9px] font-black uppercase tracking-[0.3em] whitespace-nowrap">
           NO ADIVINAMOS, MEDIMOS
@@ -647,55 +671,75 @@ const App: React.FC = () => {
         <div className="bg-amber-500 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 text-black">
           <Scale size={32} />
         </div>
-        <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">Biomeasure</h4>
+        <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">VITAL BIOMEASURE</h4>
         <p className="text-amber-500 font-black mb-6 italic tracking-widest uppercase text-xs">Precisión Antropométrica</p>
         
         <ul className="space-y-4 mb-12 flex-grow">
           <li className="text-[11px] text-gray-300 leading-relaxed uppercase font-medium">
-            <strong className="text-white block mb-1">📏 Protocolo:</strong> Perfil de pliegues, perímetros y diámetros óseos.
+            <strong className="text-white block mb-1">📏 Protocolo de Valoración Antropométrica:</strong> 
+            ✔️ Perfil de Pliegues Cutáneos<br/>
+            ✔️ Perímetros Corporales<br/>
+            ✔️ Diámetros Óseos
           </li>
           <li className="text-[11px] text-gray-300 leading-relaxed uppercase font-medium">
-            <strong className="text-white block mb-1">👨🏻‍💻 Análisis:</strong> Composición Pentacompartimental (Músculo, Grasa, Ósea).
+            <strong className="text-white block mb-1">👨🏻‍💻 Análisis de Composición Pentacompartimental:</strong> 
+            ✔️ Masa Muscular Esquelética<br/>
+            ✔️ Masa Adiposa<br/>
+            ✔️ Masa Residual<br/>
+            ✔️ Masa ósea<br/>
+            ✔️ Masa piel
           </li>
           <li className="text-[11px] text-gray-300 leading-relaxed uppercase font-medium">
-            <strong className="text-white block mb-1">⚕️ Índices:</strong> Cintura-cadera, somatotipo y riesgos de salud.
+            <strong className="text-white block mb-1">⚕️ Índices de Salud y Riesgo:</strong> 
+            ✔️ Índice Cintura-Cadera<br/>
+            ✔️ Índice de Masa Muscular vs. Grasa<br/>
+            ✔️ Somatotipo
           </li>
           <li className="text-[11px] text-gray-300 leading-relaxed uppercase font-medium">
-            <strong className="text-white block mb-1">📈 Entrega:</strong> Gráficas de evolución, mapas de calor corporal y metas realizadas.
+            <strong className="text-white block mb-1">📤 Entrega de Resultados:</strong> 
+            ✔️ Gráficas de Evolución<br/>
+            ✔️ Mapas de Calor Corporal<br/>
+            ✔️ Metas Realistas
           </li>
           <li className="text-amber-500 text-[10px] font-black italic mt-4 uppercase">
-            "No adivinamos, medimos"
+            🧬 "No adivinamos, medimos. Tu esfuerzo merece precisión."
           </li>
         </ul>
 
         <button 
-          onClick={() => handlePlanSelection("Effort Biomeasure", 100000)}
+          onClick={() => handlePlanSelection("Vital Biomeasure", 100000)}
           className="w-full py-6 bg-amber-500 text-black font-[1000] rounded-2xl uppercase tracking-widest hover:bg-white transition-all shadow-xl shadow-amber-500/20 text-sm"
         >
           Medir Mi Rendimiento
         </button>
       </div>
 
-      {/* 3. Vital Training */}
+      {/* 3. VITAL TRAINING */}
       <div className="bg-[#111] p-10 rounded-[3.5rem] border border-white/5 flex flex-col hover:border-amber-500/30 transition-all group shadow-2xl">
         <div className="bg-white/5 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-500 group-hover:text-black transition-colors">
           <Zap size={32} />
         </div>
-        <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">Vital Training</h4>
+        <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">VITAL TRAINING</h4>
         <p className="text-amber-500 font-black mb-6 italic tracking-widest uppercase text-xs">Planificación 3 Meses</p>
         
         <ul className="space-y-4 mb-12 flex-grow">
           <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-            <strong className="text-white block mb-1">📊 Estructura:</strong> Periodización y Macro-Estructura deportiva.
+            ✔️ Periodización y Macro-Estructura
           </li>
           <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-            <strong className="text-white block mb-1">⚙️ Capacidades:</strong> Entrenamiento basado en evidencia científica.
+            ✔️ Entrenamiento de Capacidades Físicas
           </li>
           <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-            <strong className="text-white block mb-1">🔥 Gestión:</strong> Control de fatiga y recuperación optimizada.
+            ✔️ Especificidad Deportiva
+          </li>
+          <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
+            ✔️ Gestión de la Fatiga y Recuperación
+          </li>
+          <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
+            ✔️ Basado en evidencia cientifica
           </li>
           <li className="text-amber-500 text-[10px] font-black italic mt-4 uppercase">
-            "Entrenamos para ganar"
+            📊 "En Vital Effort, no entrenamos para cansarnos, entrenamos para ganar."
           </li>
         </ul>
 
