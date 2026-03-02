@@ -986,150 +986,74 @@ const App: React.FC = () => {
                   </div>
 
                   <div className="grid lg:grid-cols-3 gap-8">
-                    {/* 1. Effort Nutrition */}
-                    <div className="bg-[#111] p-10 rounded-[3.5rem] border border-white/5 flex flex-col hover:border-amber-500/30 transition-all group shadow-2xl">
-                      <div className="bg-white/5 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-500 group-hover:text-black transition-colors">
-                        <Activity size={32} />
-                      </div>
-                      <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">
-                        Effort Nutrition
-                      </h4>
-                      <p className="text-amber-500 font-black mb-6 italic tracking-widest uppercase text-xs">
-                        Evaluación Bio-Individual
-                      </p>
+                    {/* SERVICIO 1: NUTRITION */}
+<div className="bg-[#111] p-10 rounded-[3.5rem] border border-white/5 flex flex-col hover:border-amber-500/30 transition-all group h-full">
+  <div className="bg-white/5 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-500 group-hover:text-black transition-colors"><Activity size={32} /></div>
+  <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">Effort Nutrition</h4>
+  <p className="text-amber-500 font-black mb-8 italic tracking-widest uppercase text-xs">Combustible para la victoria</p>
+  
+  <ul className="space-y-4 mb-10 flex-grow">
+    {[
+      { t: 'Estrategia Bio-Individual', d: 'Cálculo de gasto energético y distribución de macro/micronutrientes.' },
+      { t: 'Planificación de Comidas', d: 'Ejemplos de menús diarios, sistema de equivalentes y timing.' },
+      { t: 'Protocolo de Suplementación', d: 'Guía de ayudas ergogénicas basada en evidencia, dosis y momentos.' },
+      { t: 'Hidratación y Salud Intestinal', d: 'Cálculo de electrolitos por nivel de sudoración y densidad de fibra.' },
+      { t: 'Educación y Herramientas', d: 'Guías para comer fuera, gestión de ansiedad y técnica de preparación.' },
+    ].map((item, i) => (
+      <li key={i} className="flex gap-4 text-xs leading-relaxed">
+        <CheckCircle2 size={18} className="text-amber-500 shrink-0 mt-0.5" />
+        <span className="text-gray-400"><strong className="text-white uppercase italic block mb-1">{item.t}:</strong> {item.d}</span>
+      </li>
+    ))}
+  </ul>
+  <button onClick={() => handlePlanSelection('Effort Nutrition', 80)} className="w-full py-5 bg-white/5 text-white font-[1000] rounded-2xl uppercase tracking-widest hover:bg-amber-500 hover:text-black transition-all border border-white/10">Adquirir Nutrición</button>
+</div>
 
-                      <ul className="space-y-4 mb-12 flex-grow">
-                        <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-                          <strong className="text-white block mb-1">
-                            📊 Estrategia de Nutrientes:
-                          </strong>{' '}
-                          Distribución de macros, densidad y salud intestinal.
-                        </li>
-                        <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-                          <strong className="text-white block mb-1">
-                            🍲 Planificación:
-                          </strong>{' '}
-                          Menús diarios, equivalentes y timing nutricional.
-                        </li>
-                        <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-                          <strong className="text-white block mb-1">
-                            ⚠️ Protocolo Hidratación:
-                          </strong>{' '}
-                          Cálculo por sudoración y uso de electrolitos.
-                        </li>
-                        <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-                          <strong className="text-white block mb-1">
-                            🧬 Guía Suplementación:
-                          </strong>{' '}
-                          Vitaminas, ayudas ergogénicas y dosis.
-                        </li>
-                      </ul>
+                    {/* SERVICIO 2: BIOMEASURE */}
+<div className="bg-[#111] p-10 rounded-[3.5rem] border border-white/5 flex flex-col hover:border-amber-500/30 transition-all group h-full">
+  <div className="bg-white/5 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-500 group-hover:text-black transition-colors"><Scale size={32} /></div>
+  <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">Effort Biomeasure</h4>
+  <p className="text-amber-500 font-black mb-8 italic tracking-widest uppercase text-xs">No adivinamos, medimos</p>
+  
+  <ul className="space-y-4 mb-10 flex-grow">
+    {[
+      { t: 'Valoración Antropométrica', d: 'Protocolo ISAK de pliegues, perímetros y diámetros óseos.' },
+      { t: 'Composición Pentacompartimental', d: 'Análisis de masa muscular, adiposa, ósea, residual y de piel.' },
+      { t: 'Índices de Salud Críticos', d: 'Evaluación de riesgo cardiometabólico y perfil de somatotipo.' },
+      { t: 'Reporte de Evolución', d: 'Gráficas de progreso, mapas de calor y establecimiento de metas.' },
+      { t: 'Precisión Biológica', d: 'Identificación de asimetrías y potencial genético estructural.' },
+    ].map((item, i) => (
+      <li key={i} className="flex gap-4 text-xs leading-relaxed">
+        <CheckCircle2 size={18} className="text-amber-500 shrink-0 mt-0.5" />
+        <span className="text-gray-400"><strong className="text-white uppercase italic block mb-1">{item.t}:</strong> {item.d}</span>
+      </li>
+    ))}
+  </ul>
+  <button onClick={() => handlePlanSelection('Effort Biomeasure', 50)} className="w-full py-5 bg-white/5 text-white font-[1000] rounded-2xl uppercase tracking-widest hover:bg-amber-500 hover:text-black transition-all border border-white/10">Adquirir Valoración</button>
+</div>
 
-                      <button
-                        onClick={() =>
-                          handlePlanSelection('Effort Nutrition', 170000)
-                        }
-                        className="w-full py-5 bg-white/5 text-white font-[1000] rounded-2xl uppercase tracking-widest hover:bg-amber-500 hover:text-black transition-all border border-white/10 text-xs"
-                      >
-                        Solicitar Nutrición
-                      </button>
-                    </div>
-
-                    {/* 2. EFFORT BIOMEASURE */}
-                    <div className="bg-[#151515] p-10 rounded-[3.5rem] border-2 border-amber-500 flex flex-col relative transform lg:scale-105 shadow-[0_0_60px_rgba(245,158,11,0.15)] group">
-                      <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-amber-500 text-black px-8 py-2 rounded-full text-[9px] font-black uppercase tracking-[0.3em] whitespace-nowrap">
-                        NO ADIVINAMOS, MEDIMOS
-                      </div>
-                      <div className="bg-amber-500 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 text-black">
-                        <Scale size={32} />
-                      </div>
-                      <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">
-                        Biomeasure
-                      </h4>
-                      <p className="text-amber-500 font-black mb-6 italic tracking-widest uppercase text-xs">
-                        Precisión Antropométrica
-                      </p>
-
-                      <ul className="space-y-4 mb-12 flex-grow">
-                        <li className="text-[11px] text-gray-300 leading-relaxed uppercase font-medium italic mb-4">
-                          "Tu esfuerzo merece precisión." 🤌🏻
-                        </li>
-                        <li className="text-[11px] text-gray-300 leading-relaxed uppercase font-medium">
-                          <strong className="text-white block mb-1">
-                            📏 Protocolo:
-                          </strong>{' '}
-                          Perfil de pliegues, perímetros y diámetros óseos.
-                        </li>
-                        <li className="text-[11px] text-gray-300 leading-relaxed uppercase font-medium">
-                          <strong className="text-white block mb-1">
-                            👨🏻‍💻 Análisis:
-                          </strong>{' '}
-                          Composición Pentacompartimental (Músculo, Grasa,
-                          Ósea).
-                        </li>
-                        <li className="text-[11px] text-gray-300 leading-relaxed uppercase font-medium">
-                          <strong className="text-white block mb-1">
-                            ⚕️ Índices:
-                          </strong>{' '}
-                          Cintura-cadera, somatotipo y riesgos de salud.
-                        </li>
-                      </ul>
-
-                      <button
-                        onClick={() =>
-                          handlePlanSelection('Effort Biomeasure', 100000)
-                        }
-                        className="w-full py-6 bg-amber-500 text-black font-[1000] rounded-2xl uppercase tracking-widest hover:bg-white transition-all shadow-xl shadow-amber-500/20 text-sm"
-                      >
-                        Medir Mi Rendimiento
-                      </button>
-                    </div>
-
-                    {/* 3. Vital Training */}
-                    <div className="bg-[#111] p-10 rounded-[3.5rem] border border-white/5 flex flex-col hover:border-amber-500/30 transition-all group shadow-2xl">
-                      <div className="bg-white/5 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-500 group-hover:text-black transition-colors">
-                        <Zap size={32} />
-                      </div>
-                      <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">
-                        Vital Training
-                      </h4>
-                      <p className="text-amber-500 font-black mb-6 italic tracking-widest uppercase text-xs">
-                        Planificación 3 Meses
-                      </p>
-
-                      <ul className="space-y-4 mb-12 flex-grow">
-                        <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-                          <strong className="text-white block mb-1">
-                            📊 Estructura:
-                          </strong>{' '}
-                          Periodización y Macro-Estructura deportiva.
-                        </li>
-                        <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-                          <strong className="text-white block mb-1">
-                            ⚙️ Capacidades:
-                          </strong>{' '}
-                          Entrenamiento basado en evidencia científica.
-                        </li>
-                        <li className="text-[11px] text-gray-400 leading-relaxed uppercase font-medium">
-                          <strong className="text-white block mb-1">
-                            🔥 Gestión:
-                          </strong>{' '}
-                          Control de fatiga y recuperación optimizada.
-                        </li>
-                        <li className="text-amber-500 text-[10px] font-black italic mt-4 uppercase">
-                          "No entrenamos para cansarnos, entrenamos para ganar."
-                        </li>
-                      </ul>
-
-                      <button
-                        onClick={() =>
-                          handlePlanSelection('Vital Training', 200000)
-                        }
-                        className="w-full py-5 bg-white/5 text-white font-[1000] rounded-2xl uppercase tracking-widest hover:bg-amber-500 hover:text-black transition-all border border-white/10 text-xs"
-                      >
-                        Iniciar Entrenamiento
-                      </button>
-                    </div>
+                    {/* SERVICIO 3: TRAINING */}
+<div className="bg-[#111] p-10 rounded-[3.5rem] border border-white/5 flex flex-col hover:border-amber-500/30 transition-all group h-full">
+  <div className="bg-white/5 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-500 group-hover:text-black transition-colors"><Dumbbell size={32} /></div>
+  <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">Vital Training</h4>
+  <p className="text-amber-500 font-black mb-8 italic tracking-widest uppercase text-xs">Entrena para ganar</p>
+  
+  <ul className="space-y-4 mb-10 flex-grow">
+    {[
+      { t: 'Periodización de 3 meses', d: 'Diseño de macro-estructura adaptada a tus objetivos específicos.' },
+      { t: 'Desarrollo de Capacidades', d: 'Optimización de fuerza, hipertrofia y potencia deportiva.' },
+      { t: 'Gestión de Fatiga Central', d: 'Protocolos de recuperación activa para evitar el sobreentrenamiento.' },
+      { t: 'Basado en Ciencia Aplicada', d: 'Selección de ejercicios según perfil de resistencia y biomecánica.' },
+      { t: 'Monitoreo de Carga', d: 'Ajuste de volumen e intensidad según la respuesta fisiológica real.' },
+    ].map((item, i) => (
+      <li key={i} className="flex gap-4 text-xs leading-relaxed">
+        <CheckCircle2 size={18} className="text-amber-500 shrink-0 mt-0.5" />
+        <span className="text-gray-400"><strong className="text-white uppercase italic block mb-1">{item.t}:</strong> {item.d}</span>
+      </li>
+    ))}
+  </ul>
+  <button onClick={() => handlePlanSelection('Vital Training', 100)} className="w-full py-5 bg-white/5 text-white font-[1000] rounded-2xl uppercase tracking-widest hover:bg-amber-500 hover:text-black transition-all border border-white/10">Adquirir Entrenamiento</button>
+</div>
                   </div>
                 </div>
               </section>
