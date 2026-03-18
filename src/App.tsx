@@ -1083,6 +1083,73 @@ const App: React.FC = () => {
                 </div>
               </section>
 
+              {/* --- CASO DE ÉXITO: JENNY CARIZAÑES --- */}
+              <section id="casos-exito" className="py-24 px-6 bg-[#0a0a0a] border-t border-white/5 relative overflow-hidden">
+                <div className="max-w-6xl mx-auto relative z-10">
+                  <div className="text-center mb-16">
+                    <div className="inline-block bg-amber-500/10 border border-amber-500/20 text-amber-500 px-4 py-1 rounded-full text-[10px] font-black tracking-[0.3em] uppercase mb-4">
+                      Resultados Reales • Base Científica
+                    </div>
+                    <h3 className="text-4xl md:text-6xl font-[1000] italic uppercase tracking-tighter text-white">
+                      CASOS DE <span className="text-amber-500 text-glow">ÉXITO</span>
+                    </h3>
+                  </div>
+
+                  <div className="bg-[#111] rounded-[3rem] border border-white/10 overflow-hidden shadow-2xl">
+                    <div className="grid grid-cols-1 lg:grid-cols-2">
+                      
+                      {/* LADO IZQUIERDO: IMÁGENES CARPETA PUBLIC */}
+                      <div className="grid grid-cols-2 gap-1 p-2 bg-black/40">
+                        <div className="relative aspect-[3/4] overflow-hidden rounded-[2rem]">
+                          <img 
+                            src="/jenny-antes.jpg" 
+                            alt="Antes" 
+                            className="w-full h-full object-cover grayscale opacity-70"
+                          />
+                          <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-black px-3 py-1 rounded-full uppercase">Antes</div>
+                        </div>
+                        <div className="relative aspect-[3/4] overflow-hidden rounded-[2rem] border-2 border-amber-500/30">
+                          <img 
+                            src="/jenny-despues.jpg" 
+                            alt="Después" 
+                            className="w-full h-full object-cover"
+                          />
+                          <div className="absolute top-4 left-4 bg-amber-500 text-black text-[10px] font-black px-3 py-1 rounded-full uppercase italic">Después</div>
+                        </div>
+                      </div>
+
+                      {/* LADO DERECHO: DATOS TÉCNICOS */}
+                      <div className="p-8 md:p-14 flex flex-col justify-center">
+                        <div className="flex flex-wrap gap-2 mb-6">
+                          <span className="bg-amber-500 text-black text-[9px] font-[1000] px-3 py-1 rounded-full uppercase italic">30 Semanas</span>
+                          <span className="bg-white/5 border border-white/10 text-gray-400 text-[9px] font-black px-3 py-1 rounded-full uppercase italic">Oxidación de Grasa</span>
+                        </div>
+
+                        <h4 className="text-4xl md:text-5xl font-[1000] italic uppercase text-white mb-4 tracking-tighter">
+                          JENNY <span className="text-amber-500 text-glow uppercase">Carizañes</span>
+                        </h4>
+                        
+                        <p className="text-gray-400 text-sm md:text-base leading-relaxed mb-8 italic">
+                          "Con el Plan Pro, Jenny logró una transformación radical, optimizando su composición corporal y alcanzando un rendimiento que la llevó al podio en su categoría de <strong>HYROX</strong>."
+                        </p>
+
+                        <div className="grid grid-cols-2 gap-6 border-t border-white/10 pt-8">
+                          <div>
+                            <p className="text-[10px] text-gray-500 uppercase font-black tracking-widest mb-1">% Graso Inicial</p>
+                            <p className="text-3xl text-white font-[1000] italic">39.71%</p>
+                          </div>
+                          <div>
+                            <p className="text-[10px] text-amber-500 uppercase font-black tracking-widest mb-1">% Graso Final</p>
+                            <p className="text-3xl text-amber-500 font-[1000] italic text-glow">25.18%</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </section>
+
               {/* FAQ */}
               <section className="py-32 px-6 bg-[#0a0a0a] border-t border-white/5">
                 <div className="max-w-4xl mx-auto">
