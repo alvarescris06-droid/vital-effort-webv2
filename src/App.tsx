@@ -772,10 +772,10 @@ const App: React.FC = () => {
                         <Dumbbell size={32} />
                       </div>
                       <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">
-                        Mensual
+                        BEST - Mensual
                       </h4>
                       <p className="text-amber-500 font-black mb-6 italic tracking-widest uppercase text-xs">
-                        Enfoque Integral
+                        La base cientifica para dominar tu transformacion fisica.
                       </p>
                       <div className="flex items-baseline gap-1 mb-10">
                         <span className="text-6xl font-[1000] text-white tracking-tighter">
@@ -842,10 +842,10 @@ const App: React.FC = () => {
                         <Trophy size={32} />
                       </div>
                       <h4 className="text-4xl font-[1000] uppercase italic text-white mb-2 tracking-tighter">
-                        Élite
+                        PRO - TRIMESTRAL
                       </h4>
                       <p className="text-amber-500 font-black mb-6 italic tracking-widest uppercase text-xs">
-                        Transformación Radical
+                        Optimizacion avanzada para atletas que no aceptan el promedio.
                       </p>
                       <div className="flex items-baseline gap-1 mb-10">
                         <span className="text-7xl font-[1000] text-white tracking-tighter">
@@ -906,10 +906,10 @@ const App: React.FC = () => {
                         <Users size={32} />
                       </div>
                       <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">
-                        Anual
+                        Elite - Anual
                       </h4>
                       <p className="text-amber-500 font-black mb-6 italic tracking-widest uppercase text-xs">
-                        Compromiso Total
+                        El estandar maximo de Vital Effort compromiso absoluto, resultados totales.
                       </p>
                       <div className="flex items-baseline gap-1 mb-10">
                         <span className="text-6xl font-[1000] text-white tracking-tighter">
@@ -922,8 +922,12 @@ const App: React.FC = () => {
                       <ul className="space-y-6 mb-16 flex-grow">
                         {[
                           {
-                            t: 'Estilo de Vida',
+                            t: 'Se incluyen Plan BEST y Pro',
                             d: 'Planificación de 12 meses continuos.',
+                          },
+                          {
+                            t: 'Acceso a la instalacion',
+                            d: 'Mensualidad incluida para clases presenciales, no aplican calses online.',
                           },
                           {
                             t: 'Ahorro Máximo',
@@ -935,7 +939,7 @@ const App: React.FC = () => {
                           },
                           {
                             t: 'Regalo de Bienvenida',
-                            d: 'E-book Vital Effort incluido.',
+                            d: 'Camiseta deportiva Vital Effort incluida.',
                           },
                         ].map((item, i) => (
                           <li
@@ -1116,7 +1120,17 @@ const App: React.FC = () => {
             <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Pro</span>
           </div>
           <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">JENNY <span className="text-amber-500">CARIZAÑES</span></h3>
-          <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"Transformación radical, optimizando composición corporal y alcanzando podio en su categoría de <strong>HYROX</strong>."</p>
+          <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"Transformación radical, Con una base sólida pero falta de eficiencia en las transiciones y resistencia específica, Jenny buscaba optimizar cada segundo en el "rojo" de la competencia, Programamos bloques de periodización científica, enfocándonos en la potencia aeróbica y la fuerza bajo fatiga extrema, Logró bajar su marca personal, clasificando en el top 3 de su categoría de <strong>HYROX</strong>."</p>
+          <div className="flex flex-col gap-2 mb-6 bg-white/5 p-3 rounded-2xl border border-white/5">
+  <div className="flex justify-between items-center">
+    <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Rendimiento</span>
+    <span className="text-[9px] text-amber-500 font-bold uppercase italic">+15% Resistencia VO2 Max</span>
+  </div>
+  <div className="flex justify-between items-center">
+    <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Nutrición</span>
+    <span className="text-[9px] text-white font-bold uppercase italic">Carga de Carbohidratos (Peak)</span>
+  </div>
+</div>
           <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mt-auto">
             <div><p className="text-[9px] text-gray-500 uppercase font-black mb-1 italic">Grasa Inicial</p><p className="text-xl text-white font-[1000] italic">39.71%</p></div>
             <div><p className="text-[9px] text-amber-500 uppercase font-black mb-1 italic">Grasa Final</p><p className="text-xl text-amber-500 font-[1000] italic text-glow">25.18%</p></div>
@@ -1142,7 +1156,17 @@ const App: React.FC = () => {
             <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Best</span>
           </div>
           <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">MARIA <span className="text-amber-500">JOSE</span></h3>
-          <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"Recuperamos la <strong>estabilidad en sus rodillas</strong> mediante rehabilitación física y optimizamos su composición corporal."</p>
+          <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"Recuperamos la <strong>estabilidad en sus rodillas</strong> mediante rehabilitación física y optimizamos su composición corporal, maria jose luchaba con la falta de constancia y la creencia de que "el ejercicio no era para ella". Nos enfocamos en victorias pequeñas y sostenibles, creando un hábito sólido antes de buscar el máximo rendimiento. La transformación física es evidente, pero el brillo en sus ojos y su nueva seguridad son los verdaderos protagonistas de esta historia de Vital Effort.."</p>
+          <div className="flex flex-col gap-2 mb-6 bg-white/5 p-3 rounded-2xl border border-white/5">
+  <div className="flex justify-between items-center">
+    <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Funcional</span>
+    <span className="text-[9px] text-amber-500 font-bold uppercase italic">Estabilidad Articular recuperada 70%</span>
+  </div>
+  <div className="flex justify-between items-center">
+    <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Metabolismo</span>
+    <span className="text-[9px] text-white font-bold uppercase italic">Recomposición Normocalórica</span>
+  </div>
+</div>
           <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mt-auto">
             <div><p className="text-[9px] text-gray-500 uppercase font-black mb-1 italic">Grasa Inicial</p><p className="text-xl text-white font-[1000] italic">26.13%</p></div>
             <div><p className="text-[9px] text-amber-500 uppercase font-black mb-1 italic">Grasa Final</p><p className="text-xl text-amber-500 font-[1000] italic text-glow">19.52%</p></div>
@@ -1168,7 +1192,19 @@ const App: React.FC = () => {
             <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Pro</span>
           </div>
           <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">SERGIO <span className="text-amber-500">BRACA</span></h3>
-          <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"Neutralizamos el dolor del <strong>manguito rotador</strong> y recuperó la confianza. Resultados impecables."</p>
+          <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"El objetivo era la pérdida de tejido graso, pero con una complicación: una lesión en el manguito rotador que impedía los entrenamientos convencionales de tren superior.
+          La Estrategia: Ajustamos un déficit calórico inteligente sin pasar hambre y diseñamos una rutina de entrenamiento adaptada, sustituyendo ejercicios lesivos por variantes de bajo impacto que fortalecieron su hombro mientras el cuerpo se transformaba.
+          El Resultado: 18 kg menos y, lo más importante, un hombro funcional y sin dolor. Sergio pasó de la frustración por la lesión a la satisfacción de verse y sentirse mejor que nunca. Neutralizamos el dolor del <strong>manguito rotador</strong>  recuperó la confianza. Resultados impecables."</p>
+          <div className="flex flex-col gap-2 mb-6 bg-white/5 p-3 rounded-2xl border border-white/5">
+  <div className="flex justify-between items-center">
+    <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Fuerza</span>
+    <span className="text-[9px] text-amber-500 font-bold uppercase italic">Incremento del 38% de la fuerza base</span>
+  </div>
+  <div className="flex justify-between items-center">
+    <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Enfoque</span>
+    <span className="text-[9px] text-white font-bold uppercase italic">Dieta Anti-inflamatoria</span>
+  </div>
+</div>
           <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mt-auto">
             <div><p className="text-[9px] text-gray-500 uppercase font-black mb-1 italic">Grasa Inicial</p><p className="text-xl text-white font-[1000] italic">38.25%</p></div>
             <div><p className="text-[9px] text-amber-500 uppercase font-black mb-1 italic">Grasa Final</p><p className="text-xl text-amber-500 font-[1000] italic text-glow">24.52%</p></div>
