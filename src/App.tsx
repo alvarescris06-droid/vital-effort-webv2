@@ -1083,170 +1083,102 @@ const App: React.FC = () => {
                 </div>
               </section>
 
-              {/* --- CASO DE ÉXITO: JENNY CARIZAÑES --- */}
-              <section id="casos-exito" className="py-24 px-6 bg-[#0a0a0a] border-t border-white/5 relative overflow-hidden">
-                <div className="max-w-6xl mx-auto relative z-10">
-                  <div className="text-center mb-16">
-                    <div className="inline-block bg-amber-500/10 border border-amber-500/20 text-amber-500 px-4 py-1 rounded-full text-[10px] font-black tracking-[0.3em] uppercase mb-4">
-                      Resultados Reales • Base Científica
-                    </div>
-                    <h3 className="text-4xl md:text-6xl font-[1000] italic uppercase tracking-tighter text-white">
-                      CASOS DE <span className="text-amber-500 text-glow">ÉXITO</span>
-                    </h3>
-                  </div>
+              {/* --- SECCIÓN: CASOS DE ÉXITO (GRID UNIFICADO) --- */}
+<section id="casos-exito" className="py-24 px-6 bg-[#0a0a0a] border-t border-white/5 relative overflow-hidden">
+  <div className="max-w-7xl mx-auto relative z-10">
+    <div className="text-center mb-16">
+      <div className="inline-block bg-amber-500/10 border border-amber-500/20 text-amber-500 px-4 py-1 rounded-full text-[10px] font-black tracking-[0.3em] uppercase mb-4">
+        Resultados Reales • Base Científica
+      </div>
+      <h3 className="text-4xl md:text-6xl font-[1000] italic uppercase tracking-tighter text-white">
+        CASOS DE <span className="text-amber-500 text-glow">ÉXITO</span>
+      </h3>
+    </div>
 
-                  <div className="bg-[#111] rounded-[3rem] border border-white/10 overflow-hidden shadow-2xl">
-                    <div className="grid grid-cols-1 lg:grid-cols-2">
-                      
-                      {/* LADO IZQUIERDO: IMÁGENES CARPETA PUBLIC */}
-                      <div className="grid grid-cols-2 gap-1 p-2 bg-black/40">
-                        <div className="relative aspect-[3/4] overflow-hidden rounded-[2rem]">
-                          <img 
-                            src="/jenny-antes.jpg" 
-                            alt="Antes" 
-                            className="w-full h-full object-cover grayscale opacity-70"
-                          />
-                          <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[10px] font-black px-3 py-1 rounded-full uppercase">Antes</div>
-                        </div>
-                        <div className="relative aspect-[3/4] overflow-hidden rounded-[2rem] border-2 border-amber-500/30">
-                          <img 
-                            src="/jenny-despues.jpg" 
-                            alt="Después" 
-                            className="w-full h-full object-cover"
-                          />
-                          <div className="absolute top-4 left-4 bg-amber-500 text-black text-[10px] font-black px-3 py-1 rounded-full uppercase italic">Después</div>
-                        </div>
-                      </div>
+    {/* AQUÍ ESTÁ EL CAMBIO CLAVE: Un solo grid para los tres */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      {/* ATLETA 1: JENNY */}
+      <div className="bg-[#111] rounded-[2.5rem] border border-white/10 overflow-hidden flex flex-col hover:border-amber-500/30 transition-all duration-500">
+        <div className="grid grid-cols-2 gap-1 p-2 bg-black/20">
+          <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
+            <img src="/jenny-antes.jpg" alt="Jenny Antes" className="w-full h-full object-cover grayscale opacity-70" />
+            <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[9px] font-black px-2 py-1 rounded-full uppercase">Antes</div>
+          </div>
+          <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border-2 border-amber-500/20">
+            <img src="/jenny-despues.jpg" alt="Jenny Después" className="w-full h-full object-cover" />
+            <div className="absolute top-4 left-4 bg-amber-500 text-black text-[9px] font-black px-2 py-1 rounded-full uppercase italic">Después</div>
+          </div>
+        </div>
+        <div className="p-8 flex-grow flex flex-col">
+          <div className="flex flex-wrap gap-2 mb-4">
+            <span className="bg-amber-500 text-black text-[8px] font-[1000] px-2 py-1 rounded-full uppercase italic">30 Semanas</span>
+            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Pro</span>
+          </div>
+          <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">JENNY <span className="text-amber-500">CARIZAÑES</span></h3>
+          <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"Transformación radical, optimizando composición corporal y alcanzando podio en su categoría de <strong>HYROX</strong>."</p>
+          <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mt-auto">
+            <div><p className="text-[9px] text-gray-500 uppercase font-black mb-1 italic">Grasa Inicial</p><p className="text-xl text-white font-[1000] italic">39.71%</p></div>
+            <div><p className="text-[9px] text-amber-500 uppercase font-black mb-1 italic">Grasa Final</p><p className="text-xl text-amber-500 font-[1000] italic text-glow">25.18%</p></div>
+          </div>
+        </div>
+      </div>
 
-                      {/* LADO DERECHO: DATOS TÉCNICOS */}
-                      <div className="p-8 md:p-14 flex flex-col justify-center">
-                        <div className="flex flex-wrap gap-2 mb-6">
-                          <span className="bg-amber-500 text-black text-[9px] font-[1000] px-3 py-1 rounded-full uppercase italic">30 Semanas</span>
-                          <span className="bg-white/5 border border-white/10 text-gray-400 text-[9px] font-black px-3 py-1 rounded-full uppercase italic">Oxidación de Grasa</span>
-                        </div>
+      {/* ATLETA 2: MARIA JOSE */}
+      <div className="bg-[#111] rounded-[2.5rem] border border-white/10 overflow-hidden flex flex-col hover:border-amber-500/30 transition-all duration-500">
+        <div className="grid grid-cols-2 gap-1 p-2 bg-black/20">
+          <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
+            <img src="/maria-antes.jpg" alt="Maria Jose Antes" className="w-full h-full object-cover grayscale opacity-70" />
+            <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[9px] font-black px-2 py-1 rounded-full uppercase">Antes</div>
+          </div>
+          <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border-2 border-amber-500/20">
+            <img src="/maria-despues.jpg" alt="Maria Jose Después" className="w-full h-full object-cover" />
+            <div className="absolute top-4 left-4 bg-amber-500 text-black text-[9px] font-black px-2 py-1 rounded-full uppercase italic">Después</div>
+          </div>
+        </div>
+        <div className="p-8 flex-grow flex flex-col">
+          <div className="flex flex-wrap gap-2 mb-4">
+            <span className="bg-amber-500 text-black text-[8px] font-[1000] px-2 py-1 rounded-full uppercase italic">24 Semanas</span>
+            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Best</span>
+          </div>
+          <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">MARIA <span className="text-amber-500">JOSE</span></h3>
+          <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"Recuperamos la <strong>estabilidad en sus rodillas</strong> mediante rehabilitación física y optimizamos su composición corporal."</p>
+          <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mt-auto">
+            <div><p className="text-[9px] text-gray-500 uppercase font-black mb-1 italic">Grasa Inicial</p><p className="text-xl text-white font-[1000] italic">26.13%</p></div>
+            <div><p className="text-[9px] text-amber-500 uppercase font-black mb-1 italic">Grasa Final</p><p className="text-xl text-amber-500 font-[1000] italic text-glow">19.52%</p></div>
+          </div>
+        </div>
+      </div>
 
-                        <h4 className="text-4xl md:text-5xl font-[1000] italic uppercase text-white mb-4 tracking-tighter">
-                          JENNY <span className="text-amber-500 text-glow uppercase">Carizañes</span>
-                        </h4>
-                        
-                        <p className="text-gray-400 text-sm md:text-base leading-relaxed mb-8 italic">
-                          "Con el Plan Pro, Jenny logró una transformación radical, optimizando su composición corporal y alcanzando un rendimiento que la llevó al podio en su categoría de <strong>HYROX</strong>."
-                        </p>
+      {/* ATLETA 3: SERGIO BRACA */}
+      <div className="bg-[#111] rounded-[2.5rem] border border-white/10 overflow-hidden flex flex-col hover:border-amber-500/30 transition-all duration-500">
+        <div className="grid grid-cols-2 gap-1 p-2 bg-black/20">
+          <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
+            <img src="/sergio-antes.jpg" alt="Sergio Antes" className="w-full h-full object-cover grayscale opacity-70" />
+            <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[9px] font-black px-2 py-1 rounded-full uppercase">Antes</div>
+          </div>
+          <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border-2 border-amber-500/20">
+            <img src="/sergio-despues.jpg" alt="Sergio Actual" className="w-full h-full object-cover" />
+            <div className="absolute top-4 left-4 bg-amber-500 text-black text-[9px] font-black px-2 py-1 rounded-full uppercase italic">Actual</div>
+          </div>
+        </div>
+        <div className="p-8 flex-grow flex flex-col">
+          <div className="flex flex-wrap gap-2 mb-4">
+            <span className="bg-amber-500 text-black text-[8px] font-[1000] px-2 py-1 rounded-full uppercase italic">Activo</span>
+            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Pro</span>
+          </div>
+          <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">SERGIO <span className="text-amber-500">BRACA</span></h3>
+          <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"Neutralizamos el dolor del <strong>manguito rotador</strong> y recuperó la confianza. Resultados impecables."</p>
+          <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mt-auto">
+            <div><p className="text-[9px] text-gray-500 uppercase font-black mb-1 italic">Grasa Inicial</p><p className="text-xl text-white font-[1000] italic">38.25%</p></div>
+            <div><p className="text-[9px] text-amber-500 uppercase font-black mb-1 italic">Grasa Final</p><p className="text-xl text-amber-500 font-[1000] italic text-glow">24.52%</p></div>
+          </div>
+        </div>
+      </div>
 
-                        <div className="grid grid-cols-2 gap-6 border-t border-white/10 pt-8">
-                          <div>
-                            <p className="text-[10px] text-gray-500 uppercase font-black tracking-widest mb-1">% Graso Inicial</p>
-                            <p className="text-3xl text-white font-[1000] italic">39.71%</p>
-                          </div>
-                          <div>
-                            <p className="text-[10px] text-amber-500 uppercase font-black tracking-widest mb-1">% Graso Final</p>
-                            <p className="text-3xl text-amber-500 font-[1000] italic text-glow">25.18%</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      {/* ATLETA 2: MARIA JOSE */}
-              <div className="bg-[#111] rounded-[2.5rem] border border-white/10 overflow-hidden flex flex-col hover:border-amber-500/30 transition-all duration-500">
-                <div className="grid grid-cols-2 gap-1 p-2 bg-black/20">
-                  <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
-                    <img 
-                      src="/maria-antes.jpg" 
-                      alt="Maria Jose Antes" 
-                      className="w-full h-full object-cover grayscale opacity-70" 
-                    />
-                    <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[9px] font-black px-2 py-1 rounded-full uppercase">Antes</div>
-                  </div>
-                  <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border-2 border-amber-500/20 shadow-[0_0_15px_rgba(245,158,11,0.1)]">
-                    <img 
-                      src="/maria-despues.jpg" 
-                      alt="Maria Jose Después" 
-                      className="w-full h-full object-cover" 
-                    />
-                    <div className="absolute top-4 left-4 bg-amber-500 text-black text-[9px] font-black px-2 py-1 rounded-full uppercase italic">Después</div>
-                  </div>
-                </div>
-
-                <div className="p-8 flex-grow flex flex-col">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="bg-amber-500 text-black text-[8px] font-[1000] px-2 py-1 rounded-full uppercase italic">24 Semanas</span>
-                    <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Best</span>
-                    <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Rehabilitación</span>
-                  </div>
-
-                  <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">
-                    MARIA <span className="text-amber-500">JOSE</span>
-                  </h3>
-                  
-                  <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">
-                    "Logró una transformación radical. Recuperamos la <strong>estabilidad en sus rodillas</strong> mediante rehabilitación física, optimizando su composición corporal y recuperando la confianza en su rendimiento."
-                  </p>
-
-                  <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mt-auto">
-                    <div>
-                      <p className="text-[9px] text-gray-500 uppercase font-black mb-1 tracking-widest">% Graso Inicial</p>
-                      <p className="text-xl text-white font-[1000] italic">26.13%</p>
-                    </div>
-                    <div>
-                      <p className="text-[9px] text-amber-500 uppercase font-black mb-1 tracking-widest">% Graso Final</p>
-                      <p className="text-xl text-amber-500 font-[1000] italic text-glow">19.52%</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* ATLETA 3: SERGIO BRACA */}
-              <div className="bg-[#111] rounded-[2.5rem] border border-white/10 overflow-hidden flex flex-col hover:border-amber-500/30 transition-all duration-500">
-                <div className="grid grid-cols-2 gap-1 p-2 bg-black/20">
-                  <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
-                    <img 
-                      src="/sergio-antes.jpg" 
-                      alt="Sergio Antes" 
-                      className="w-full h-full object-cover grayscale opacity-70" 
-                    />
-                    <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[9px] font-black px-2 py-1 rounded-full uppercase">Antes</div>
-                  </div>
-                  <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border-2 border-amber-500/20 shadow-[0_0_15px_rgba(245,158,11,0.1)]">
-                    <img 
-                      src="/sergio-despues.jpg" 
-                      alt="Sergio Actual" 
-                      className="w-full h-full object-cover" 
-                    />
-                    <div className="absolute top-4 left-4 bg-amber-500 text-black text-[9px] font-black px-2 py-1 rounded-full uppercase italic">Actual</div>
-                  </div>
-                </div>
-
-                <div className="p-8 flex-grow flex flex-col">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    <span className="bg-amber-500 text-black text-[8px] font-[1000] px-2 py-1 rounded-full uppercase italic">Activo</span>
-                    <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Pro</span>
-                    <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Rehab Hombro</span>
-                  </div>
-
-                  <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">
-                    SERGIO <span className="text-amber-500">BRACA</span>
-                  </h3>
-                  
-                  <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">
-                    "A pesar del desgaste en el <strong>manguito rotador</strong>, logramos neutralizar el dolor y obtener resultados impecables. Sergio recuperó la confianza y demostró que la edad es solo un número."
-                  </p>
-
-                  <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mt-auto">
-                    <div>
-                      <p className="text-[9px] text-gray-500 uppercase font-black mb-1 tracking-widest">% Graso Inicial</p>
-                      <p className="text-xl text-white font-[1000] italic">38.25%</p>
-                    </div>
-                    <div>
-                      <p className="text-[9px] text-amber-500 uppercase font-black mb-1 tracking-widest">% Graso Actual</p>
-                      <p className="text-xl text-amber-500 font-[1000] italic text-glow">24.52%</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-                    </div>
-                  </div>
-                </div>
-              </section>
+    </div>
+  </div>
+</section>
 
               {/* FAQ */}
               <section className="py-32 px-6 bg-[#0a0a0a] border-t border-white/5">
