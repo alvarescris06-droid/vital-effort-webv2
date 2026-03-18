@@ -1194,6 +1194,55 @@ const App: React.FC = () => {
                 </div>
               </div>
 
+              {/* ATLETA 3: SERGIO BRACA */}
+              <div className="bg-[#111] rounded-[2.5rem] border border-white/10 overflow-hidden flex flex-col hover:border-amber-500/30 transition-all duration-500">
+                <div className="grid grid-cols-2 gap-1 p-2 bg-black/20">
+                  <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
+                    <img 
+                      src="/sergio-antes.jpg" 
+                      alt="Sergio Antes" 
+                      className="w-full h-full object-cover grayscale opacity-70" 
+                    />
+                    <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[9px] font-black px-2 py-1 rounded-full uppercase">Antes</div>
+                  </div>
+                  <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border-2 border-amber-500/20 shadow-[0_0_15px_rgba(245,158,11,0.1)]">
+                    <img 
+                      src="/sergio-despues.jpg" 
+                      alt="Sergio Actual" 
+                      className="w-full h-full object-cover" 
+                    />
+                    <div className="absolute top-4 left-4 bg-amber-500 text-black text-[9px] font-black px-2 py-1 rounded-full uppercase italic">Actual</div>
+                  </div>
+                </div>
+
+                <div className="p-8 flex-grow flex flex-col">
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    <span className="bg-amber-500 text-black text-[8px] font-[1000] px-2 py-1 rounded-full uppercase italic">Activo</span>
+                    <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Pro</span>
+                    <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Rehab Hombro</span>
+                  </div>
+
+                  <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">
+                    SERGIO <span className="text-amber-500">BRACA</span>
+                  </h3>
+                  
+                  <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">
+                    "A pesar del desgaste en el <strong>manguito rotador</strong>, logramos neutralizar el dolor y obtener resultados impecables. Sergio recuperó la confianza y demostró que la edad es solo un número."
+                  </p>
+
+                  <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mt-auto">
+                    <div>
+                      <p className="text-[9px] text-gray-500 uppercase font-black mb-1 tracking-widest">% Graso Inicial</p>
+                      <p className="text-xl text-white font-[1000] italic">38.25%</p>
+                    </div>
+                    <div>
+                      <p className="text-[9px] text-amber-500 uppercase font-black mb-1 tracking-widest">% Graso Actual</p>
+                      <p className="text-xl text-amber-500 font-[1000] italic text-glow">24.52%</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
                     </div>
                   </div>
                 </div>
