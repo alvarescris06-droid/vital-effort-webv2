@@ -775,7 +775,7 @@ const App: React.FC = () => {
                         BEST
                       </h4>
                       <p className="text-amber-500 font-black mb-6 italic tracking-widest uppercase text-xs">
-                        La base cientifica para dominar tu transformacion fisica.
+                        La base científica para dominar tu transformación física.
                       </p>
                       <div className="flex items-baseline gap-1 mb-10">
                         <span className="text-6xl font-[1000] text-white tracking-tighter">
@@ -845,7 +845,7 @@ const App: React.FC = () => {
                         PRO
                       </h4>
                       <p className="text-amber-500 font-black mb-6 italic tracking-widest uppercase text-xs">
-                        Optimizacion avanzada para atletas que no aceptan el promedio.
+                        Optimización avanzada para atletas que no aceptan el promedio.
                       </p>
                       <div className="flex items-baseline gap-1 mb-10">
                         <span className="text-7xl font-[1000] text-white tracking-tighter">
@@ -909,7 +909,7 @@ const App: React.FC = () => {
                       Élite 
                       </h4>
                       <p className="text-amber-500 font-black mb-6 italic tracking-widest uppercase text-xs">
-                        El estandar maximo de Vital Effort compromiso absoluto, resultados totales.
+                        El estándar máximo de Vital Effort compromiso absoluto, resultados totales.
                       </p>
                       <div className="flex items-baseline gap-1 mb-10">
                         <span className="text-6xl font-[1000] text-white tracking-tighter">
@@ -994,7 +994,7 @@ const App: React.FC = () => {
 <div className="bg-[#111] p-10 rounded-[3.5rem] border border-white/5 flex flex-col hover:border-amber-500/30 transition-all group h-full">
   <div className="bg-white/5 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-500 group-hover:text-black transition-colors"><Activity size={32} /></div>
   <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">Effort Nutrition</h4>
-  <p className="text-amber-500 font-black mb-8 italic tracking-widest uppercase text-xs">Combustible para la victoria</p>
+  <p className="text-amber-500 font-black mb-8 italic tracking-widest uppercase text-xs">Tu nutrición es el combustible para la victoria</p>
   
   <ul className="space-y-4 mb-10 flex-grow">
     {[
@@ -1017,7 +1017,7 @@ const App: React.FC = () => {
 <div className="bg-[#111] p-10 rounded-[3.5rem] border border-white/5 flex flex-col hover:border-amber-500/30 transition-all group h-full">
   <div className="bg-white/5 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-500 group-hover:text-black transition-colors"><Scale size={32} /></div>
   <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">Effort Biomeasure</h4>
-  <p className="text-amber-500 font-black mb-8 italic tracking-widest uppercase text-xs">No adivinamos, medimos</p>
+  <p className="text-amber-500 font-black mb-8 italic tracking-widest uppercase text-xs">No adivinamos, medimos. Tu esfuerzo merece precisión</p>
   
   <ul className="space-y-4 mb-10 flex-grow">
     {[
@@ -1040,7 +1040,7 @@ const App: React.FC = () => {
 <div className="bg-[#111] p-10 rounded-[3.5rem] border border-white/5 flex flex-col hover:border-amber-500/30 transition-all group h-full">
   <div className="bg-white/5 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-amber-500 group-hover:text-black transition-colors"><Dumbbell size={32} /></div>
   <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">Vital Training</h4>
-  <p className="text-amber-500 font-black mb-8 italic tracking-widest uppercase text-xs">Entrena para ganar</p>
+  <p className="text-amber-500 font-black mb-8 italic tracking-widest uppercase text-xs">No entrenamos para cansarnos, entrenamos para ganar</p>
   
   <ul className="space-y-4 mb-10 flex-grow">
     {[
@@ -1194,7 +1194,6 @@ const App: React.FC = () => {
             <span className="bg-amber-500 text-black text-[8px] font-[1000] px-2 py-1 rounded-full uppercase italic">Activo</span>
             <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Pro</span>
             <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Rehabilitacion fisica</span>
-            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Oxidacion de grasa</span>
           </div>
           <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">SERGIO <span className="text-amber-500">BRACA</span></h3>
           <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"El objetivo era la pérdida de tejido graso, pero con una complicación: una lesión en el manguito rotador que impedía los entrenamientos convencionales de tren superior.
@@ -1303,7 +1302,6 @@ const App: React.FC = () => {
             <span className="bg-amber-500 text-black text-[8px] font-[1000] px-2 py-1 rounded-full uppercase italic">52 Semanas</span>
             <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Pro</span>
             <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Rehabilitacion fisica</span>
-            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Atleta Híbrida</span>
           </div>
 
           <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">
@@ -1317,12 +1315,16 @@ const App: React.FC = () => {
           {/* LOGROS TÉCNICOS */}
           <div className="flex flex-col gap-2 mb-6 bg-white/5 p-3 rounded-2xl border border-white/5">
             <div className="flex justify-between items-center">
-              <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Rehabilitación</span>
-              <span className="text-[9px] text-amber-500 font-bold uppercase italic">Gestión de Metatarsalgia</span>
+              <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Rehabilitación activa</span>
+              <span className="text-[9px] text-amber-500 font-bold uppercase italic">Mejora física durante la lesión</span>
             </div>
             <div className="flex justify-between items-center">
-              <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Rendimiento</span>
-              <span className="text-[9px] text-white font-bold uppercase italic">Mejora RM Back Squat</span>
+              <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Rendimiento Multideporte</span>
+              <span className="text-[9px] text-amber-500 font-bold uppercase italic">Éxito en cuatro disciplinas simultáneas </span>
+              <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Pisada Eficiente</span>
+              <span className="text-[9px] text-amber-500 font-bold uppercase italic">Técnica corregida para evitar impacto </span>
+              <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Potencia Híbrida</span>
+              <span className="text-[9px] text-amber-500 font-bold uppercase italic">Éxito en cuatro disciplinas simultáneas </span>
             </div>
           </div>
 
