@@ -1100,7 +1100,7 @@ const App: React.FC = () => {
     </div>
 
     {/* AQUÍ ESTÁ EL CAMBIO CLAVE: Un solo grid para los tres */}
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
       
       {/* ATLETA 1: JENNY */}
       <div className="bg-[#111] rounded-[2.5rem] border border-white/10 overflow-hidden flex flex-col hover:border-amber-500/30 transition-all duration-500">
@@ -1118,6 +1118,8 @@ const App: React.FC = () => {
           <div className="flex flex-wrap gap-2 mb-4">
             <span className="bg-amber-500 text-black text-[8px] font-[1000] px-2 py-1 rounded-full uppercase italic">30 Semanas</span>
             <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Pro</span>
+            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Oxidacion de grasa</span>
+            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Preparacion fisica</span>
           </div>
           <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">JENNY <span className="text-amber-500">CARIZAÑES</span></h3>
           <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"Transformación radical, Con una base sólida pero falta de eficiencia en las transiciones y resistencia específica, Jenny buscaba optimizar cada segundo en el "rojo" de la competencia, Programamos bloques de periodización científica, enfocándonos en la potencia aeróbica y la fuerza bajo fatiga extrema, Logró bajar su marca personal, clasificando en el top 3 de su categoría de <strong>HYROX</strong>."</p>
@@ -1154,6 +1156,7 @@ const App: React.FC = () => {
           <div className="flex flex-wrap gap-2 mb-4">
             <span className="bg-amber-500 text-black text-[8px] font-[1000] px-2 py-1 rounded-full uppercase italic">24 Semanas</span>
             <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Best</span>
+            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Rehabilitacion fisica</span>
           </div>
           <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">MARIA <span className="text-amber-500">JOSE</span></h3>
           <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"Recuperamos la <strong>estabilidad en sus rodillas</strong> mediante rehabilitación física y optimizamos su composición corporal, maria jose luchaba con la falta de constancia y la creencia de que "el ejercicio no era para ella". Nos enfocamos en victorias pequeñas y sostenibles, creando un hábito sólido antes de buscar el máximo rendimiento. La transformación física es evidente, pero el brillo en sus ojos y su nueva seguridad son los verdaderos protagonistas de esta historia de Vital Effort.."</p>
@@ -1190,6 +1193,8 @@ const App: React.FC = () => {
           <div className="flex flex-wrap gap-2 mb-4">
             <span className="bg-amber-500 text-black text-[8px] font-[1000] px-2 py-1 rounded-full uppercase italic">Activo</span>
             <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Pro</span>
+            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Rehabilitacion fisica</span>
+            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Oxidacion de grasa</span>
           </div>
           <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">SERGIO <span className="text-amber-500">BRACA</span></h3>
           <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"El objetivo era la pérdida de tejido graso, pero con una complicación: una lesión en el manguito rotador que impedía los entrenamientos convencionales de tren superior.
@@ -1208,6 +1213,67 @@ const App: React.FC = () => {
           <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mt-auto">
             <div><p className="text-[9px] text-gray-500 uppercase font-black mb-1 italic">Grasa Inicial</p><p className="text-xl text-white font-[1000] italic">38.25%</p></div>
             <div><p className="text-[9px] text-amber-500 uppercase font-black mb-1 italic">Grasa Final</p><p className="text-xl text-amber-500 font-[1000] italic text-glow">24.52%</p></div>
+          </div>
+        </div>
+      </div>
+      {/* ATLETA 4: DAVID SERNA */}
+      <div className="bg-[#111] rounded-[2.5rem] border border-white/10 overflow-hidden flex flex-col hover:border-amber-500/30 transition-all duration-500">
+        <div className="grid grid-cols-2 gap-1 p-2 bg-black/20">
+          <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
+            <img 
+              src="/david-antes.jpg" 
+              alt="David Antes" 
+              className="w-full h-full object-cover grayscale opacity-70" 
+            />
+            <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[9px] font-black px-2 py-1 rounded-full uppercase">Inicial</div>
+          </div>
+          <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border-2 border-amber-500/20 shadow-[0_0_15px_rgba(245,158,11,0.1)]">
+            <img 
+              src="/david-despues.jpg" 
+              alt="David Después" 
+              className="w-full h-full object-cover" 
+            />
+            <div className="absolute top-4 left-4 bg-amber-500 text-black text-[9px] font-black px-2 py-1 rounded-full uppercase italic">Final</div>
+          </div>
+        </div>
+
+        <div className="p-8 flex-grow flex flex-col">
+          <div className="flex flex-wrap gap-2 mb-4">
+            <span className="bg-amber-500 text-black text-[8px] font-[1000] px-2 py-1 rounded-full uppercase italic">52 Semanas</span>
+            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Elite</span>
+            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Hipertrofia</span>
+            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Ganancia de fuerza</span>
+          </div>
+
+          <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">
+            DAVID <span className="text-amber-500">SERNA</span>
+          </h3>
+          
+          <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">
+            "David llegó con un objetivo claro: ganar masa muscular de forma estética y funcional, pero con una preferencia estricta por el entrenamiento de fuerza tradicional. El reto era lograr una ganancia "limpia" (minimizando el aumento de grasa) manteniendo la progresión de cargas sin estancamientos durante un año completo. La Estrategia: Diseñamos una periodización de fuerza enfocada en movimientos compuestos (Basics) con una sobrecarga progresiva meticulosa. La clave fue el control de las variables de descanso y un superávit calórico controlado, ajustando los macronutrientes mes a mes para asegurar que cada kilo ganado fuera tejido muscular real. El Resultado: Un año después, David ha transformado su composición corporal. No solo su estética ha cambiado radicalmente, sino que sus niveles de fuerza base han subido considerablemente. "La paciencia y el hierro no mienten".Logró una ganancia de <strong>10kg de masa magra</strong> mediante una periodización de fuerza con básicos.
+          </p>
+
+          {/* LOGROS TÉCNICOS (NUEVO DISEÑO) */}
+          <div className="flex flex-col gap-2 mb-6 bg-white/5 p-3 rounded-2xl border border-white/5">
+            <div className="flex justify-between items-center">
+              <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Fuerza Base</span>
+              <span className="text-[9px] text-amber-500 font-bold uppercase italic">+10kg Masa Magra</span>
+            </div>
+            <div className="flex justify-between items-center">
+              <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Metodología</span>
+              <span className="text-[9px] text-white font-bold uppercase italic">Sobrecarga Progresiva</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mt-auto">
+            <div>
+              <p className="text-[9px] text-gray-500 uppercase font-black mb-1 tracking-widest">% Graso Inicial</p>
+              <p className="text-xl text-white font-[1000] italic">21.52%</p>
+            </div>
+            <div>
+              <p className="text-[9px] text-amber-500 uppercase font-black mb-1 tracking-widest">% Graso Final</p>
+              <p className="text-xl text-amber-500 font-[1000] italic text-glow">16.8%</p>
+            </div>
           </div>
         </div>
       </div>
