@@ -1208,7 +1208,7 @@ const App: React.FC = () => {
 </div>
           <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mt-auto">
             <div><p className="text-[9px] text-gray-500 uppercase font-black mb-1 italic">Grasa Inicial</p><p className="text-xl text-white font-[1000] italic">38.25%</p></div>
-            <div><p className="text-[9px] text-amber-500 uppercase font-black mb-1 italic">Grasa Final</p><p className="text-xl text-amber-500 font-[1000] italic text-glow">24.52%</p></div>
+            <div><p className="text-[9px] text-amber-500 uppercase font-black mb-1 italic">Grasa Actual</p><p className="text-xl text-amber-500 font-[1000] italic text-glow">24.52%</p></div>
           </div>
         </div>
       </div>
@@ -1295,7 +1295,7 @@ const App: React.FC = () => {
 
         <div className="p-8 flex-grow flex flex-col">
           <div className="flex flex-wrap gap-2 mb-4">
-            <span className="bg-amber-500 text-black text-[8px] font-[1000] px-2 py-1 rounded-full uppercase italic">52 Semanas</span>
+            <span className="bg-amber-500 text-black text-[8px] font-[1000] px-2 py-1 rounded-full uppercase italic">Activo</span>
             <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Pro</span>
             <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Rehabilitacion fisica</span>
           </div>
@@ -1329,6 +1329,66 @@ const App: React.FC = () => {
             <div>
               <p className="text-[9px] text-amber-500 uppercase font-black mb-1 tracking-widest">% Graso Actual</p>
               <p className="text-xl text-amber-500 font-[1000] italic text-glow">22.36%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* ATLETA 6: MILAN HERNÁNDEZ */}
+      <div className="bg-[#111] rounded-[2.5rem] border border-white/10 overflow-hidden flex flex-col hover:border-amber-500/30 transition-all duration-500">
+        <div className="grid grid-cols-2 gap-1 p-2 bg-black/20">
+          <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
+            <img 
+              src="/milan-antes.jpg" 
+              alt="Milan Inicial" 
+              className="w-full h-full object-cover grayscale opacity-70" 
+            />
+            <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[9px] font-black px-2 py-1 rounded-full uppercase">Antes</div>
+          </div>
+          <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border-2 border-amber-500/20 shadow-[0_0_15px_rgba(245,158,11,0.1)]">
+            <img 
+              src="/milan-actual.jpg" 
+              alt="Milan Actual" 
+              className="w-full h-full object-cover" 
+            />
+            <div className="absolute top-4 left-4 bg-amber-500 text-black text-[9px] font-black px-2 py-1 rounded-full uppercase italic">Despues</div>
+          </div>
+        </div>
+
+        <div className="p-8 flex-grow flex flex-col">
+          <div className="flex flex-wrap gap-2 mb-4">
+            <span className="bg-amber-500 text-black text-[8px] font-[1000] px-2 py-1 rounded-full uppercase italic">26 Semanas</span>
+            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Pro</span>
+            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Hipertrofia Estética</span>
+          </div>
+
+          <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">
+            MILAN <span className="text-amber-500">HERNÁNDEZ</span>
+          </h3>
+          
+          <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">
+            "El Desafío: Con una base atlética pero sin el volumen muscular deseado, el reto era aprovechar su genética privilegiada para lograr una transformación física brutal en solo seis meses de preparación. La Estrategia: Implementamos un programa de alta intensidad enfocado en la tensión mecánica y el estrés metabólico progresivo. Optimizamos su nutrición con un superávit calórico denso en nutrientes, sincronizando la ingesta de proteínas con sus picos de entrenamiento de fuerza. El Resultado: En tiempo récord, logró un cambio estético impactante con una ganancia muscular densa y definida. Su disciplina inquebrantable y respuesta biológica excepcional lo consolidan como un referente de éxito total en Vital Effort.."
+          </p>
+
+          {/* LOGROS TÉCNICOS */}
+          <div className="flex flex-col gap-2 mb-6 bg-white/5 p-3 rounded-2xl border border-white/5">
+            <div className="flex justify-between items-center">
+              <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Genética Potenciada</span>
+              <span className="text-[9px] text-amber-500 font-bold uppercase italic">Máximo desarrollo de masa magra</span>
+            </div>
+            <div className="flex justify-between items-center">
+              <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Cambio Estético Brutal</span>
+              <span className="text-[9px] text-white font-bold uppercase italic">Transformación física radical y visible</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mt-auto">
+            <div>
+              <p className="text-[9px] text-gray-500 uppercase font-black mb-1 tracking-widest">% Graso Inicial</p>
+              <p className="text-xl text-white font-[1000] italic">12.56%</p>
+            </div>
+            <div>
+              <p className="text-[9px] text-amber-500 uppercase font-black mb-1 tracking-widest">% Graso Final</p>
+              <p className="text-xl text-amber-500 font-[1000] italic text-glow">9.40%</p>
             </div>
           </div>
         </div>
