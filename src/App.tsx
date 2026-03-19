@@ -1225,7 +1225,7 @@ const App: React.FC = () => {
               alt="David Antes" 
               className="w-full h-full object-cover grayscale opacity-70" 
             />
-            <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[9px] font-black px-2 py-1 rounded-full uppercase">Inicial</div>
+            <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[9px] font-black px-2 py-1 rounded-full uppercase">Antes</div>
           </div>
           <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border-2 border-amber-500/20 shadow-[0_0_15px_rgba(245,158,11,0.1)]">
             <img 
@@ -1233,7 +1233,7 @@ const App: React.FC = () => {
               alt="David Después" 
               className="w-full h-full object-cover" 
             />
-            <div className="absolute top-4 left-4 bg-amber-500 text-black text-[9px] font-black px-2 py-1 rounded-full uppercase italic">Final</div>
+            <div className="absolute top-4 left-4 bg-amber-500 text-black text-[9px] font-black px-2 py-1 rounded-full uppercase italic">Despues</div>
           </div>
         </div>
 
