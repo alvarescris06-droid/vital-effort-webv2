@@ -1118,19 +1118,18 @@ const App: React.FC = () => {
           <div className="flex flex-wrap gap-2 mb-4">
             <span className="bg-amber-500 text-black text-[8px] font-[1000] px-2 py-1 rounded-full uppercase italic">30 Semanas</span>
             <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Pro</span>
-            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Oxidacion de grasa</span>
             <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Preparacion fisica</span>
           </div>
           <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">JENNY <span className="text-amber-500">CARIZAÑES</span></h3>
-          <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"Transformación radical, Con una base sólida pero falta de eficiencia en las transiciones y resistencia específica, Jenny buscaba optimizar cada segundo en el "rojo" de la competencia, Programamos bloques de periodización científica, enfocándonos en la potencia aeróbica y la fuerza bajo fatiga extrema, Logró bajar su marca personal, clasificando en el top 3 de su categoría de <strong>HYROX</strong>."</p>
+          <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"El Desafío: Jenny contaba con una base sólida, pero carecía de eficiencia en transiciones y resistencia específica para optimizar cada segundo en competencia. La Estrategia: Programamos bloques de periodización científica, enfocándonos en la potencia aeróbica y la fuerza bajo fatiga extrema. Optimizamos el "compromised running" y la eficiencia mecánica en cada estación funcional. El Resultado: Logró bajar su marca personal drásticamente, clasificando en el Top 3 de su categoría. Una demostración de que la disciplina y la ciencia vencen cualquier cronómetro en la arena."</p>
           <div className="flex flex-col gap-2 mb-6 bg-white/5 p-3 rounded-2xl border border-white/5">
   <div className="flex justify-between items-center">
     <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Rendimiento</span>
     <span className="text-[9px] text-amber-500 font-bold uppercase italic">+15% Resistencia VO2 Max</span>
   </div>
   <div className="flex justify-between items-center">
-    <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Nutrición</span>
-    <span className="text-[9px] text-white font-bold uppercase italic">Carga de Carbohidratos (Peak)</span>
+    <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Récord Personal</span>
+    <span className="text-[9px] text-white font-bold uppercase italic">Reducción drástica de tiempo total</span>
   </div>
 </div>
           <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mt-auto">
@@ -1159,15 +1158,15 @@ const App: React.FC = () => {
             <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Rehabilitacion fisica</span>
           </div>
           <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">MARIA <span className="text-amber-500">JOSE</span></h3>
-          <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"Recuperamos la <strong>estabilidad en sus rodillas</strong> mediante rehabilitación física y optimizamos su composición corporal, maria jose luchaba con la falta de constancia y la creencia de que "el ejercicio no era para ella". Nos enfocamos en victorias pequeñas y sostenibles, creando un hábito sólido antes de buscar el máximo rendimiento. La transformación física es evidente, pero el brillo en sus ojos y su nueva seguridad son los verdaderos protagonistas de esta historia de Vital Effort.."</p>
+          <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"El Desafío: María José luchaba contra la inestabilidad en sus rodillas y la creencia de que el ejercicio no era para ella debido a sus limitaciones físicas. La Estrategia: Recuperamos la estabilidad articular mediante rehabilitación física y fortalecimiento progresivo. Nos enfocamos en victorias pequeñas y sostenibles, creando un hábito sólido de entrenamiento antes de buscar el máximo rendimiento estético. El Resultado: La transformación física es evidente, pero su nueva seguridad es la verdadera protagonista. Logró una composición corporal óptima y un brillo de confianza que define el éxito en Vital Effort."</p>
           <div className="flex flex-col gap-2 mb-6 bg-white/5 p-3 rounded-2xl border border-white/5">
   <div className="flex justify-between items-center">
-    <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Funcional</span>
-    <span className="text-[9px] text-amber-500 font-bold uppercase italic">Estabilidad Articular recuperada 70%</span>
+    <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Estabilidad Funcional</span>
+    <span className="text-[9px] text-amber-500 font-bold uppercase italic">Control motor y equilibrio optimizados</span>
   </div>
   <div className="flex justify-between items-center">
-    <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Metabolismo</span>
-    <span className="text-[9px] text-white font-bold uppercase italic">Recomposición Normocalórica</span>
+    <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Retorno Seguro</span>
+    <span className="text-[9px] text-white font-bold uppercase italic">Regreso exitoso al entrenamiento</span>
   </div>
 </div>
           <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mt-auto">
@@ -1196,17 +1195,15 @@ const App: React.FC = () => {
             <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Rehabilitacion fisica</span>
           </div>
           <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">SERGIO <span className="text-amber-500">BRACA</span></h3>
-          <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"El objetivo era la pérdida de tejido graso, pero con una complicación: una lesión en el manguito rotador que impedía los entrenamientos convencionales de tren superior.
-          La Estrategia: Ajustamos un déficit calórico inteligente sin pasar hambre y diseñamos una rutina de entrenamiento adaptada, sustituyendo ejercicios lesivos por variantes de bajo impacto que fortalecieron su hombro mientras el cuerpo se transformaba.
-          El Resultado: 18 kg menos y, lo más importante, un hombro funcional y sin dolor. Sergio pasó de la frustración por la lesión a la satisfacción de verse y sentirse mejor que nunca. Neutralizamos el dolor del <strong>manguito rotador</strong>  recuperó la confianza. Resultados impecables."</p>
+          <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">"El Desafío: El objetivo era la pérdida de tejido graso, enfrentando una lesión de manguito rotador que impedía los entrenamientos convencionales de tren superior y generaba frustración. La Estrategia: Ajustamos un déficit calórico inteligente y diseñamos una rutina adaptada con variantes de bajo impacto que fortalecieron su hombro mientras el cuerpo se transformaba radicalmente. El Resultado: Con 18 kg menos, Sergio recuperó un hombro funcional y sin dolor. Pasó de la limitación articular a la satisfacción de sentirse mejor que nunca. Resultados impecables con un enfoque clínico y deportivo."</p>
           <div className="flex flex-col gap-2 mb-6 bg-white/5 p-3 rounded-2xl border border-white/5">
   <div className="flex justify-between items-center">
-    <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Fuerza</span>
-    <span className="text-[9px] text-amber-500 font-bold uppercase italic">Incremento del 38% de la fuerza base</span>
+    <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Salud metabólica</span>
+    <span className="text-[9px] text-amber-500 font-bold uppercase italic">Indicadores vitales en niveles óptimos</span>
   </div>
   <div className="flex justify-between items-center">
-    <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Enfoque</span>
-    <span className="text-[9px] text-white font-bold uppercase italic">Dieta Anti-inflamatoria</span>
+    <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Hombro Blindado</span>
+    <span className="text-[9px] text-white font-bold uppercase italic">Articulación fuerte y funcional</span>
   </div>
 </div>
           <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mt-auto">
@@ -1241,7 +1238,6 @@ const App: React.FC = () => {
             <span className="bg-amber-500 text-black text-[8px] font-[1000] px-2 py-1 rounded-full uppercase italic">52 Semanas</span>
             <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Elite</span>
             <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Hipertrofia</span>
-            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Ganancia de fuerza</span>
           </div>
 
           <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">
@@ -1249,18 +1245,18 @@ const App: React.FC = () => {
           </h3>
           
           <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">
-            "David llegó con un objetivo claro: ganar masa muscular de forma estética y funcional, pero con una preferencia estricta por el entrenamiento de fuerza tradicional. El reto era lograr una ganancia "limpia" (minimizando el aumento de grasa) manteniendo la progresión de cargas sin estancamientos durante un año completo. La Estrategia: Diseñamos una periodización de fuerza enfocada en movimientos compuestos (Basics) con una sobrecarga progresiva meticulosa. La clave fue el control de las variables de descanso y un superávit calórico controlado, ajustando los macronutrientes mes a mes para asegurar que cada kilo ganado fuera tejido muscular real. El Resultado: Un año después, David ha transformado su composición corporal. No solo su estética ha cambiado radicalmente, sino que sus niveles de fuerza base han subido considerablemente. "La paciencia y el hierro no mienten".Logró una ganancia de <strong>10kg de masa magra</strong> mediante una periodización de fuerza con básicos.
+            "El Desafío: David buscaba ganar masa muscular de forma estética y funcional, priorizando el entrenamiento de fuerza tradicional y evitando ganar grasa excesiva durante un año completo. La Estrategia: Diseñamos una periodización enfocada en movimientos compuestos con sobrecarga progresiva meticulosa. Controlamos variables de descanso y ajustamos macronutrientes mes a mes para asegurar que cada kilo ganado fuera tejido magro real. El Resultado: Tras un año, obtuvo una ganancia de 10 kg de masa magra. Sus niveles de fuerza base subieron considerablemente, demostrando que la paciencia y el hierro bien programados jamás mienten."
           </p>
 
           {/* LOGROS TÉCNICOS (NUEVO DISEÑO) */}
           <div className="flex flex-col gap-2 mb-6 bg-white/5 p-3 rounded-2xl border border-white/5">
             <div className="flex justify-between items-center">
-              <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Fuerza Base</span>
-              <span className="text-[9px] text-amber-500 font-bold uppercase italic">+10kg Masa Magra</span>
+              <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Cargas Máximas</span>
+              <span className="text-[9px] text-amber-500 font-bold uppercase italic">Incremento sustancial en fuerza base</span>
             </div>
             <div className="flex justify-between items-center">
-              <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Metodología</span>
-              <span className="text-[9px] text-white font-bold uppercase italic">Sobrecarga Progresiva</span>
+              <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Estética Definida</span>
+              <span className="text-[9px] text-white font-bold uppercase italic">Volumen muscular sin grasa excesiva</span>
             </div>
           </div>
 
@@ -1309,7 +1305,7 @@ const App: React.FC = () => {
           </h3>
           
           <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">
-            "Angela personifica la definición de atleta híbrida: combina la exigencia de la fuerza pura, el CrossFit, la resistencia del running y la técnica explosiva del patinaje de velocidad. Su mayor obstáculo no fue la carga de trabajo, sino una <strong>metatarsalgia</strong> en el segundo dedo que amenazaba con paralizar su temporada. El reto era mantener su rendimiento en todas las disciplinas mientras rehabilitábamos la lesión sin detenerla por completo. La Estrategia: Implementamos un enfoque multidisciplinario. En Vital Effort coordinamos la rehabilitación del metatarso (terapia manual, reeducación de la pisada y descarga selectiva) con la programación de entrenamiento. Ajustamos el volumen de carrera e impacto (running/patinaje) y priorizamos el entrenamiento de fuerza de cadena posterior y tronco, permitiéndole seguir mejorando sus marcas de fuerza y resistencia cardiovascular sin agravar la lesión. El Resultado: A pesar de la lesión, Angela ha logrado resultados increibles, incluyendo mejorar su tiempo en patinaje y su RM en Back Squat. Su caso demuestra que con una gestión inteligente, nutrición de precisión y rehabilitación integrada, el cuerpo humano puede superar límites impensables."
+            "El Desafío: Ángela enfrentaba una metatarsalgia que amenazaba su temporada de CrossFit, running y patinaje. El reto era mantener el rendimiento multidisciplinar mientras rehabilitábamos la lesión sin detenerla. La Estrategia: Implementamos un enfoque de rehabilitación activa con terapia manual y reeducación de la pisada. Ajustamos volúmenes de impacto y priorizamos la fuerza de cadena posterior para proteger la zona del metatarso. El Resultado: Superó sus marcas de Powerlifting y mejoró sus tiempos en patinaje a pesar de la lesión. Su caso demuestra que la gestión inteligente y la nutrición de precisión superan límites impensables."
           </p>
 
           {/* LOGROS TÉCNICOS */}
@@ -1319,12 +1315,9 @@ const App: React.FC = () => {
               <span className="text-[9px] text-amber-500 font-bold uppercase italic">Mejora física durante la lesión</span>
             </div>
             <div className="flex justify-between items-center">
-              <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Rendimiento Multideporte</span>
-              <span className="text-[9px] text-amber-500 font-bold uppercase italic">Éxito en cuatro disciplinas simultáneas </span>
-              <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Pisada Eficiente</span>
-              <span className="text-[9px] text-amber-500 font-bold uppercase italic">Técnica corregida para evitar impacto </span>
               <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Potencia Híbrida</span>
-              <span className="text-[9px] text-amber-500 font-bold uppercase italic">Éxito en cuatro disciplinas simultáneas </span>
+              <span className="text-[9px] text-white
+               font-bold uppercase italic">Éxito en cuatro disciplinas simultáneas </span>
             </div>
           </div>
 
