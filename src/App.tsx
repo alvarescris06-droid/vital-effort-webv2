@@ -772,7 +772,7 @@ const App: React.FC = () => {
                         <Dumbbell size={32} />
                       </div>
                       <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">
-                        BEST - Mensual
+                        BEST
                       </h4>
                       <p className="text-amber-500 font-black mb-6 italic tracking-widest uppercase text-xs">
                         La base cientifica para dominar tu transformacion fisica.
@@ -842,7 +842,7 @@ const App: React.FC = () => {
                         <Trophy size={32} />
                       </div>
                       <h4 className="text-4xl font-[1000] uppercase italic text-white mb-2 tracking-tighter">
-                        PRO - TRIMESTRAL
+                        PRO
                       </h4>
                       <p className="text-amber-500 font-black mb-6 italic tracking-widest uppercase text-xs">
                         Optimizacion avanzada para atletas que no aceptan el promedio.
@@ -906,7 +906,7 @@ const App: React.FC = () => {
                         <Users size={32} />
                       </div>
                       <h4 className="text-3xl font-[1000] uppercase italic text-white mb-2">
-                        Elite - Anual
+                      Élite 
                       </h4>
                       <p className="text-amber-500 font-black mb-6 italic tracking-widest uppercase text-xs">
                         El estandar maximo de Vital Effort compromiso absoluto, resultados totales.
@@ -1100,7 +1100,7 @@ const App: React.FC = () => {
     </div>
 
     {/* AQUÍ ESTÁ EL CAMBIO CLAVE: Un solo grid para los tres */}
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       
       {/* ATLETA 1: JENNY */}
       <div className="bg-[#111] rounded-[2.5rem] border border-white/10 overflow-hidden flex flex-col hover:border-amber-500/30 transition-all duration-500">
@@ -1273,6 +1273,67 @@ const App: React.FC = () => {
             <div>
               <p className="text-[9px] text-amber-500 uppercase font-black mb-1 tracking-widest">% Graso Final</p>
               <p className="text-xl text-amber-500 font-[1000] italic text-glow">16.8%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* ATLETA 5: ÁNGELA VEGA */}
+      <div className="bg-[#111] rounded-[2.5rem] border border-white/10 overflow-hidden flex flex-col hover:border-amber-500/30 transition-all duration-500">
+        <div className="grid grid-cols-2 gap-1 p-2 bg-black/20">
+          <div className="relative aspect-[3/4] overflow-hidden rounded-2xl">
+            <img 
+              src="/angela-antes.jpg" 
+              alt="Ángela Inicial" 
+              className="w-full h-full object-cover grayscale opacity-70" 
+            />
+            <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white text-[9px] font-black px-2 py-1 rounded-full uppercase">Antes</div>
+          </div>
+          <div className="relative aspect-[3/4] overflow-hidden rounded-2xl border-2 border-amber-500/20 shadow-[0_0_15px_rgba(245,158,11,0.1)]">
+            <img 
+              src="/angela-actual.jpg" 
+              alt="Ángela Actual" 
+              className="w-full h-full object-cover" 
+            />
+            <div className="absolute top-4 left-4 bg-amber-500 text-black text-[9px] font-black px-2 py-1 rounded-full uppercase italic">Actual</div>
+          </div>
+        </div>
+
+        <div className="p-8 flex-grow flex flex-col">
+          <div className="flex flex-wrap gap-2 mb-4">
+            <span className="bg-amber-500 text-black text-[8px] font-[1000] px-2 py-1 rounded-full uppercase italic">52 Semanas</span>
+            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Plan Pro</span>
+            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Rehabilitacion fisica</span>
+            <span className="bg-white/5 text-gray-400 text-[8px] font-black px-2 py-1 rounded-full uppercase border border-white/10 italic">Atleta Híbrida</span>
+          </div>
+
+          <h3 className="text-3xl font-[1000] italic uppercase text-white mb-3 tracking-tighter">
+            ÁNGELA <span className="text-amber-500">VEGA</span>
+          </h3>
+          
+          <p className="text-gray-400 text-xs leading-relaxed mb-6 italic flex-grow">
+            "Angela personifica la definición de atleta híbrida: combina la exigencia de la fuerza pura, el CrossFit, la resistencia del running y la técnica explosiva del patinaje de velocidad. Su mayor obstáculo no fue la carga de trabajo, sino una <strong>metatarsalgia</strong> en el segundo dedo que amenazaba con paralizar su temporada. El reto era mantener su rendimiento en todas las disciplinas mientras rehabilitábamos la lesión sin detenerla por completo. La Estrategia: Implementamos un enfoque multidisciplinario. En Vital Effort coordinamos la rehabilitación del metatarso (terapia manual, reeducación de la pisada y descarga selectiva) con la programación de entrenamiento. Ajustamos el volumen de carrera e impacto (running/patinaje) y priorizamos el entrenamiento de fuerza de cadena posterior y tronco, permitiéndole seguir mejorando sus marcas de fuerza y resistencia cardiovascular sin agravar la lesión. El Resultado: A pesar de la lesión, Angela ha logrado resultados increibles, incluyendo mejorar su tiempo en patinaje y su RM en Back Squat. Su caso demuestra que con una gestión inteligente, nutrición de precisión y rehabilitación integrada, el cuerpo humano puede superar límites impensables."
+          </p>
+
+          {/* LOGROS TÉCNICOS */}
+          <div className="flex flex-col gap-2 mb-6 bg-white/5 p-3 rounded-2xl border border-white/5">
+            <div className="flex justify-between items-center">
+              <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Rehabilitación</span>
+              <span className="text-[9px] text-amber-500 font-bold uppercase italic">Gestión de Metatarsalgia</span>
+            </div>
+            <div className="flex justify-between items-center">
+              <span className="text-[8px] text-gray-500 uppercase font-black tracking-widest">Rendimiento</span>
+              <span className="text-[9px] text-white font-bold uppercase italic">Mejora RM Back Squat</span>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6 mt-auto">
+            <div>
+              <p className="text-[9px] text-gray-500 uppercase font-black mb-1 tracking-widest">% Graso Inicial</p>
+              <p className="text-xl text-white font-[1000] italic">35.28%</p>
+            </div>
+            <div>
+              <p className="text-[9px] text-amber-500 uppercase font-black mb-1 tracking-widest">% Graso Actual</p>
+              <p className="text-xl text-amber-500 font-[1000] italic text-glow">22.36%</p>
             </div>
           </div>
         </div>
